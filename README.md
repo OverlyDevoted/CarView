@@ -4,19 +4,18 @@
 
 This is a practice project for creating dynamic content. Creation of dynamic content is managed by JavaScript. Data for dynamic content is taken from a form which is filled up by the user.
 
-Client-side validation is mainly done through HTML tags `required`. 
-
 ## Content
 
 Form includes inputs for car:
-- Brand,
-- Model,
-- Engine type,
-- Base price,
-- Mileage,
-- Image source.
+- Brand
+- Model
+- Engine type
+- Base price
+- Mileage
+- Image source
 
 Upon submitting form and passing validation requirements, a post for a car is generated with the appropriate data.
+Client-side validation is mainly done through HTML tags `required`. 
 
 ## To-do
 
