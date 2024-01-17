@@ -20,9 +20,9 @@ Client-side validation is mainly done through HTML attribute `required`.
 
 ## To-do
 
-There are some additional features  
+There are some additional features that could be implemented as a challenge intended to evoke exploration of different HTML, CSS, JavaScript features  
 - [ ] Save created car postings inside local storage
-- [ ] Styling
+- [ ] Styling with SASS
 - [ ] Car post removal/edit
 - [ ] Image upload or image select from existing
 - [ ] One server architecture simulation by segregation of possible brands, models, etc. and JavaScript, then putting data into JSON files that would be read by the application to generate selection options. 
