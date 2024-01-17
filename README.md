@@ -3,10 +3,11 @@
 ## Purpose 
 
 This is a practice project for creating dynamic content. Creation of dynamic content is managed by JavaScript. Data for dynamic content is taken from a form which is filled up by the user.
+This project contains practices that must never be used in production environments as it would pose some serious security risks. All implemented features are purely educational and for practice purposes.
 
 ## Content
 
-Form includes inputs for car:
+Form inputs ask for information about car:
 - Brand
 - Model
 - Engine type
@@ -14,12 +15,13 @@ Form includes inputs for car:
 - Mileage
 - Image source
 
-Upon submitting form and passing validation requirements, a post for a car is generated with the appropriate data.
-Client-side validation is mainly done through HTML tags `required`. 
+After submitting the form and passing validation requirements, a post for a car is generated with the appropriate data.
+Client-side validation is mainly done through HTML attribute `required`. 
 
 ## To-do
 
-- [ ] Local storage to save created car postings
+There are some additional features  
+- [ ] Save created car postings inside local storage
 - [ ] Styling
 - [ ] Car post removal/edit
 - [ ] Image upload or image select from existing
