@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Render onto dom through JavaScript</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+    <div>
+        <h1>Super duper dynamic car view website</h1>
+    </div>
+    <!-- label - for attribute helps binds through input's id attribute. When clicked will automatically focus on the corresponding input -->
+    <!-- input
+            1. name - used to bind a group of inputs
+            2. id - used to identify 
+    -->
+    <form id="car-form" class="car-form" action="submit">
+        <!-- Make selections dynamic -->
+        <div>
+            <label for="brand-select">Brand</label>
+            <select id="brand-select" name="brand" required>
+            </select>
+        </div>
+        <div id="model-select-container">
+            <label id="model-select-label" for="model-select">Select brand for models</label>
+        </div>
+        <div id="engine-type-container">
+            <p style="margin: 0;">Select engine type:</p>
+            <div>
+                <input type="radio" id="diesel-radio" name="engine-radio" value="diesel" required>
+                <label for="diesel-radio">Diesel</label>
+            </div>
+            <div>
+                <input type="radio" id="petrol-radio" name="engine-radio" value="petrol" required>
+                <label for="petrol-radio">Petrol</label>
+            </div>
+            <div>
+                <input type="radio" id="electric-radio" name="engine-radio" value="electric" required>
+                <label for="electric-radio">Eletric</label>
+            </div>
+            <div>
+                <input type="radio" id="gas-radio" name="engine-radio" value="gas" required>
+                <label for="gas-radio">Gas</label>
+            </div>
+        </div>
+        <div>
+            <label for="base-price">Base Price</label>
+            <input type="number" name="base-price" id="base-price" required>
+        </div>
+        <div>
+            <label for="mileage">Mileage</label>
+            <input type="number" name="mileage" id="mileage" required>
+        </div>
+        <div>
+            <label for="img-src">Image source</label>
+            <input type="text" name="img-src" id="img-src" required>
+        </div>
+        <div>
+            <input id="submit-btn" type="submit" value="Submit">
+        </div>
+    </form>
+    <div id="cars-container">
+    </div>
+    <script src="./js/car.js"></script>
+    <script src="./js/carForm.js"></script>
+</body>
+
+</html>
