@@ -78,10 +78,17 @@ function submit(e) {
     const basePriceAmount = document.getElementById("base-price").value
     const mileageAmount = document.getElementById("mileage").value
     const imgSrc = document.getElementById("img-src").value
-
-    const carToAdd = new Car(brandName, modelName, engineTypeName, basePriceAmount, mileageAmount, imgSrc)
+    // constructor(brand, model, engine, basePrice, mileage, image, color = "juoda")
+    const carData = { brand: brandName, model: modelName, engine: engineTypeName, basePrice: basePriceAmount, mileage: mileageAmount, image: imgSrc }
+    addCar(carData);
+    localStorage.setItem(localStorage.length, JSON.stringify(carData))
+}
+function addCar(...carData) {
+    console.log(...carData)
+    const carToAdd = new Car(...carData);
     carToAdd.renderElement()
 }
+
 // MAIN could be seperated
 renderBrands()
 const form = document.getElementById("car-form")

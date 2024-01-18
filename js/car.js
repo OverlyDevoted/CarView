@@ -1,12 +1,12 @@
 class Car {
     baseColor = ["black", "red", "blue", "silver", "white", 'special blue']
-    constructor(brand, model, engine, basePrice, mileage, image, color = "juoda") {
-        this.brand = brand
-        this.model = model
-        this.engine = engine
-        this.basePrice = { price: basePrice }
-        this.mileage = mileage
-        this.image = image;
+    constructor(props, color = "juoda") {
+        this.brand = props.brand
+        this.model = props.model
+        this.engine = props.engine
+        this.basePrice = { price: props.basePrice }
+        this.mileage = props.mileage
+        this.image = props.image;
         console.log(color)
         if (color.toLocaleLowerCase() === 'special blue')
             this.basePrice["price"] += 500
@@ -61,7 +61,7 @@ class Car {
         const heading = document.createElement("h2")
         const content = document.createTextNode(this.getInfo())
         heading.append(content)
-        
+
         const img = document.createElement("img");
         img.classList.add("car-img")
         img.src = this.image
